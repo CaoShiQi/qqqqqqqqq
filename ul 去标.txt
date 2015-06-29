@@ -1,0 +1,17 @@
+ul去符号标
+list-style-type:none;
+
+（浮动一行直到换行结束） 清空浮动
+.clsDivFu2>ul>li:after
+{
+	content:"";
+	display:block;
+	height:1px;
+	clear:both;
+}
+
+{
+	opacity:0.5;  /*  IE 不支持*/
+	filter:alpha(opacity=50);  /* IE 通过滤镜效果实现  透明  效果 */}
+
+marign-top:-50px;要能正确移动{}中就不能用marign中的auto属性
